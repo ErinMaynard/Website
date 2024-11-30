@@ -1,0 +1,130 @@
+body {
+    background-color: rgb(203, 208, 185);
+    font-family: "Radley";
+}
+
+.radley-regular {
+    font-family: "Radley", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.radley-regular-italic {
+    font-family: "Radley", serif;
+    font-weight: 400;
+    font-style: italic;
+}  
+
+.navbar {
+    background-color: rgb(59, 82, 73);
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar li {
+    margin: auto;
+    display: inline;
+    margin-right: -50%;
+}
+
+.navbar a {
+    color: rgb(203, 208, 185);
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.navbar h1 {
+    margin-left: -100%;
+}
+
+.sliders {
+    margin-top: 3%;
+}
+
+.collapsible {
+    margin-left: 2%;
+    background-color: rgb(65, 41, 44);
+    color: white;
+    cursor: pointer;
+    padding: 2%;
+    width: 75%;
+    border: solid;
+    text-align: center;
+    align-self: center;
+    outline: none;
+    font-size: large;
+    border-color: rgb(99, 43, 48);
+  }
+  
+  .collapsible:hover {
+    background-color: rgb(195, 151, 159);
+  }
+  
+  .content {
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    margin-left: 23%;
+
+    cursor: pointer;
+    width: 74.5%;
+    border: solid;
+    align-self: center;
+    font-size: large;
+    border-color: rgb(99, 43, 48);
+  }
+
+.footer {
+    margin-top: auto;
+}
+
+.footer h3 {
+    position: fixed;
+    bottom: 6%;
+    margin-left: 47%;
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+.footer ul {
+    display: flex;
+    background-color: rgb(59, 82, 73);
+    list-style: none;
+    text-decoration: none;
+    width: 96%;
+    margin-right: 2%;
+    position: fixed;
+    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer li {
+    margin: auto;
+    display: inline;
+    color: rgb(203, 208, 185);
+    justify-content: space-between;
+    font-size: larger;
+}
+
+.footer a {
+    color: rgb(203, 208, 185);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
