@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Radley:ital@0;1&family=Yusei+Magic&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="home.html" target="_blank">
+            <h1>Erin Maynard</h1>
+        </a>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="resume.html">Resume and Certificates</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="projects.html">Contact Me</a></li>
+        </ul>
+    </div>
+
+    <h1 style="color: #41292c; font-size: 4em;">Projects</h1>
+    <h2 style="color: #41292c; font-size: 1.5em;">Click on a project for more info about it!</h2>
+
+    <div class="project-file-main">
+        <div class="proj-one">
+            <button type="button" class="projects-collapsible">Financial Tracker in Python</button>
+            <div class="projects-content" id="projects-content">
+                <h3>
+                    This was my first big python project that gave no guidance on what the final product was supposed to be. I worked alongside a group
+                    and we decided to create a financial tracker. This allowed us to work with finances as objects and create a simple GUI for the user
+                    to use our product easily.
+                </h3>
+                <ul>
+                    <li><strong>Language: </strong>Python</li>
+                    <li><strong>Skills used: </strong>OOP in Python, Unit testing</li>
+                    <li><strong>Link: </strong><a href="https://github.com/rachelha1211/INST326-Group-Project/blob/main/Final%20Project%20Documentation" target="_blank">Link to Git</a></li>
+                </ul>
+            </div>
+            <div class="proj-two">
+                <button type="button" class="projects-collapsible">Financial Tracker in Python</button>
+                <div class="projects-content" id="projects-content">
+                    <h3>
+                        This was my first big python project that gave no guidance on what the final product was supposed to be. I worked alongside a group
+                        and we decided to create a financial tracker. This allowed us to work with finances as objects and create a simple GUI for the user
+                        to use our product easily.
+                    </h3>
+                    <ul>
+                        <li><strong>Language: </strong>Python</li>
+                        <li><strong>Skills used: </strong>OOP in Python, Unit testing</li>
+                        <li><strong>Link: </strong><a href="https://github.com/rachelha1211/INST326-Group-Project/blob/main/Final%20Project%20Documentation" target="_blank">Link to Git</a></li>
+                    </ul>
+                </div>
+
+            <script>
+                var coll = document.getElementsByClassName("projects-collapsible");
+                var i;
+
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var projectsContent = this.nextElementSibling;
+                        if (projectsContent.style.display === "block") {
+                            projectsContent.style.display = "none";
+                        } else {
+                            projectsContent.style.display = "block";
+                        }
+                    });
+                }
+            </script>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <h3><strong>Contact Me:</strong></h3>
+        <br>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/erin-maynard-b65230253/" target="_blank">Connect On LinkdIn</a>
+            </li>
+            <li><a href="mailto: erinmaynardmd@gmail.com" target="_blank">Email Me At: erinmaynardmd@gmail.com</a></li>
+            <li style="font-size: large;">Call Me At: (443) 301-2352</li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -128,3 +128,34 @@ body {
     color: rgb(255, 255, 255);
     text-decoration: underline;
 }
+
+/*styling in the projects file*/
+
+.projects-collapsible {
+    background-color: rgb(65, 41, 44);
+    color: white;
+    cursor: pointer;
+    padding: 2%;
+    width: 100%;
+    border: solid;
+    text-align: center;
+    align-self: center;
+    outline: none;
+    font-size: large;
+    border-color: rgb(99, 43, 48);
+  }
+  
+  .projects-collapsible:hover {
+    background-color: rgb(195, 151, 159);
+  }
+  
+  .projects-content {
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border: solid;
+    align-self: center;
+    font-size: large;
+    border-color: rgb(99, 43, 48);
+  }
