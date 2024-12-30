@@ -1,0 +1,59 @@
+<div class="sliders">
+    <button type="button" class="collapsible">GPA and Coursework</button>
+    <div class="content" id="transcript-content">
+        <p>
+            <strong>GPA: 3.68</strong>
+        <ul>
+            <li>Coding Courses:</li>
+            <ul>
+                <li>Object Oriented Programming I and II with Java</li>
+                <li>Object Oriented Programming with Python</li>
+                <li>Database Design Modeling</li>
+                <li>Dynamic Web Applications</li>
+            </ul>
+        </ul>
+        <ul>
+            <li>Math Courses:</li>
+            <ul>
+                <li>Calculus I, II, and III</li>
+                <li>Discrete Structures</li>
+            </ul>
+        </ul>
+        </p>
+    </div>
+    <button type="button" class="collapsible">Skills</button>
+    <div class="content" id="skills-content">
+        <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ul>
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                var transcript = document.getElementById("transcript-content");
+                var skills = document.getElementById("skills-content");
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    if (transcript.style.display === "block") {
+                        transcript.style.display = "none";
+                    }
+                    if (skills.style.display === "block") {
+                        skills.style.display = "none";
+                    }
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</div>
